@@ -1,0 +1,6 @@
+/*设置全局样式*/
+HTML, body, #app {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
