@@ -11,9 +11,9 @@ import './assets/iconfont/iconfont.css'
 import axios from 'axios'
 
 // 挂载 axios
-Vue.prototype.$http = axios
+Vue.prototype.$http = axios// 由于 VueComponent 与 Vue 实例共享一个 prototype 对象, 挂载此处能够 被 VueComponent 访问
 // 设置 axios 访问根路径
-axios.defaults.baseURL = 'http://localhost:9090'
+axios.defaults.baseURL = 'http://localhost:9090'// 为方便与后端联调, 修改端口号
 
 Vue.config.productionTip = false
 
